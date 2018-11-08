@@ -59,6 +59,61 @@ function shalat($keyword) {
 	$result .= $json['data']['Isha'];
     return $result;
 }
+
+#=====[ Sticker MESSAGE ]==========[ ARSYBAI ]======================
+  
+      elif (text == 'nyimak') or (text == 'Nyimak'):
+
+        message = TemplateSendMessage(
+
+            alt_text='Yudha public bot',
+
+            template=ImageCarouselTemplate(
+
+                columns=[
+
+                    ImageCarouselColumn(
+
+                        image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/13162615/IOS/sticker.png',
+
+                        action=URIAction(uri='https://line.me/ti/p/~masih.00')
+
+                    )
+
+                ]
+
+            )
+
+        )
+
+        line_bot_api.reply_message(event.reply_token, message)
+                  
+             elif (text == 'mak') or (text == 'Mak'):
+
+        message = TemplateSendMessage(
+
+            alt_text='Yudha public bot',
+
+            template=ImageCarouselTemplate(
+
+                columns=[
+
+                    ImageCarouselColumn(
+
+                        image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/13162625/IOS/sticker.png',
+
+                        action=URIAction(uri='https://line.me/ti/p/~masih.00')
+
+                    )
+
+                ]
+
+            )
+
+        )
+
+        line_bot_api.reply_message(event.reply_token, message)
+         
 #-------------------------[Function]-------------------------#
 
 # require_once('./src/function/search-1.php');
